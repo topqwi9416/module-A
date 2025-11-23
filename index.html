@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BestGames — Маркетплейс</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="theme--dark">
+
+  <header class="header page-header">
+    <div class="header__inner">
+      <a class="logo header__logo" href="#">BestGames</a>
+
+      <button class="header__burger" id="burger" aria-label="menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav header__nav" id="nav">
+        <a class="nav__link" href="#catalog">Каталог</a>
+        <a class="nav__link" href="#catalog">Новинки</a>
+        <a class="nav__link" href="#catalog">Скидки</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="btn btn--ghost" id="themeToggle" aria-label="Сменить тему">Тема</button>
+        <button class="btn btn--ghost" id="profileBtn" aria-label="Профиль">Профиль</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--with-slider" aria-label="Реклама">
+      <div class="hero__slider" id="slider">
+        <div class="slide" style="background-image:url('images/detroit.webp')">
+          <div class="slide__content">
+            <h1>Сезонные скидки — до 70%</h1>
+            <p>Только сегодня — успей купить.</p>
+          </div>
+        </div>
+        <div class="slide" style="background-image:url('images/battla\ 6.jpg')">
+          <div class="slide__content">
+            <h1>Новые релизы</h1>
+            <p>Самые ожидаемые игры уже в каталоге.</p>
+          </div>
+        </div>
+        <div class="slide" style="background-image:url('images/arc\ raiders.jpg')">
+          <div class="slide__content">
+            <h1>Рекомендуем</h1>
+            <p>Лучшая игра по версии редакции.</p>
+          </div>
+        </div>
+      </div>
+      <button class="slider__nav slider__nav--prev" id="prev" aria-label="prev">‹</button>
+      <button class="slider__nav slider__nav--next" id="next" aria-label="next">›</button>
+    </section>
+
+    <section class="catalog-section container" id="catalog">
+      <div class="section-head">
+        <h2 class="section-title">Каталог игр</h2>
+        <div class="catalog-controls">
+          <label class="search">
+            <input type="search" id="search" placeholder="Поиск игр...">
+          </label>
+        </div>
+      </div>
+
+      <div class="catalog-grid" id="gamesGrid">
+
+        <!-- Example game cards -->
+
+        <article class="game-card">
+          <img class="game-card__img" src="https://i.playground.ru/e/URBC786IWizRovTems_LFw.webp" alt="Cyberpunk">
+          <div class="game-card__body">
+            <h3 class="game-card__title">Cyberpunk 2077</h3>
+            <p class="game-card__meta">Экшен · RPG</p>
+            <div class="game-card__foot">
+              <span class="price">2099₽</span>
+              <button class="btn btn--primary add-to-cart">Купить</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <img class="game-card__img"
+            src="https://assets.rpgsite.net/articles/images/000/017/474/original/tw3-10th-ann-thumb.jpg" alt="Witcher">
+          <div class="game-card__body">
+            <h3 class="game-card__title">
+              The Witcher 3: Wild Hunt</h3>
+            <p class="game-card__meta">RPG · Фэнтези</p>
+            <div class="game-card__foot">
+              <span class="price">999₽</span>
+              <button class="btn btn--primary add-to-cart">Купить</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <img class="game-card__img"
+            src="https://files.vgtimes.ru/gallery/main/171846/3680646047_valorant_console_launch_key_art.webp"
+            alt="Valorant">
+          <div class="game-card__body">
+            <h3 class="game-card__title">Valorant</h3>
+            <p class="game-card__meta">Шутер · Командная</p>
+            <div class="game-card__foot">
+              <span class="price">Бесплатно</span>
+              <button class="btn btn--primary add-to-cart">Скачать</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <img class="game-card__img" src="https://staticg.sportskeeda.com/editor/2023/09/4fb25-16958522869276-1920.jpg"
+            alt="CSGO">
+          <div class="game-card__body">
+            <h3 class="game-card__title">CS 2 Prime</h3>
+            <p class="game-card__meta">Шутер · Турнирный</p>
+            <div class="game-card__foot">
+              <span class="price">1299₽</span>
+              <button class="btn btn--primary add-to-cart">Купить</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <img class="game-card__img"
+            src="https://avatars.mds.yandex.net/get-mpic/4465823/2a0000018aa8cc6d5bd3c8fdcc0239aa6b35/orig"
+            alt="Witcher">
+          <div class="game-card__body">
+            <h3 class="game-card__title">
+              Detroit: Become Human</h3>
+            <p class="game-card__meta">Приключенческие игры · Экшены</p>
+            <div class="game-card__foot">
+              <span class="price">514₽</span>
+              <button class="btn btn--primary add-to-cart">Купить</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <img class="game-card__img"
+            src="https://avatars.mds.yandex.net/i?id=4d3185e49c4a6fcf0665f57a05356842_l-5425024-images-thumbs&n=13"
+            alt="Witcher">
+          <div class="game-card__body">
+            <h3 class="game-card__title">
+              Battlefield™ 6</h3>
+            <p class="game-card__meta">Экшены</p>
+            <div class="game-card__foot">
+              <span class="price">4999₽</span>
+              <button class="btn btn--primary add-to-cart">Купить</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <img class="game-card__img"
+            src="https://www.gamespot.com/a/uploads/screen_kubrick/1352/13527689/4153973-arc-raiders-social%281%29.jpg"
+            alt="Witcher">
+          <div class="game-card__body">
+            <h3 class="game-card__title">
+              ARC Raiders</h3>
+            <p class="game-card__meta">Экшены</p>
+            <div class="game-card__foot">
+              <span class="price">2569₽</span>
+              <button class="btn btn--primary add-to-cart">Купить</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Diablo IV -->
+        <article class="game-card">
+          <img class="game-card__img" src="https://wallpapers.com/images/featured/diablo-4-lilith-e02kxo2d7wovfps5.jpg"
+            alt="Diablo IV">
+          <div class="game-card__body">
+            <h3 class="game-card__title">Diablo IV</h3>
+            <p class="game-card__meta">Экшн / RPG</p>
+            <div class="game-card__foot">
+              <span class="price">2000₽</span>
+              <button class="btn btn--primary add-to-cart">Купить</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Forza Horizon 5 -->
+        <article class="game-card">
+          <img class="game-card__img" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1551360/header.jpg"
+            alt="Forza Horizon 5">
+          <div class="game-card__body">
+            <h3 class="game-card__title">Forza Horizon 5</h3>
+            <p class="game-card__meta">Гонки / Приключения</p>
+            <div class="game-card__foot">
+              <span class="price">2550₽</span> <!-- ~‑15% -->
+              <button class="btn btn--primary add-to-cart">Купить</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Baldur’s Gate 3 -->
+        <article class="game-card">
+          <img class="game-card__img" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg"
+            alt="Baldur’s Gate 3">
+          <div class="game-card__body">
+            <h3 class="game-card__title">Baldur’s Gate 3</h3>
+            <p class="game-card__meta">Ролевые / Приключения</p>
+            <div class="game-card__foot">
+              <span class="price">1850₽</span> <!-- примерно ‑14% -->
+              <button class="btn btn--primary add-to-cart">Купить</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Red Dead Redemption 2 -->
+        <article class="game-card">
+          <img class="game-card__img" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg"
+            alt="Red Dead Redemption 2">
+          <div class="game-card__body">
+            <h3 class="game-card__title">Red Dead Redemption 2</h3>
+            <p class="game-card__meta">Экшн / Приключения</p>
+            <div class="game-card__foot">
+              <span class="price">850₽</span>
+              <button class="btn btn--primary add-to-cart">Купить</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- DOOM Eternal -->
+        <article class="game-card">
+          <img class="game-card__img" src="https://cdn.cloudflare.steamstatic.com/steam/apps/782330/header.jpg"
+            alt="DOOM Eternal">
+          <div class="game-card__body">
+            <h3 class="game-card__title">DOOM Eternal</h3>
+            <p class="game-card__meta">Шутер</p>
+            <div class="game-card__foot">
+              <span class="price">1450₽</span>
+              <button class="btn btn--primary add-to-cart">Купить</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mortal Kombat 11 -->
+        <article class="game-card">
+          <img class="game-card__img" src="https://cdn.cloudflare.steamstatic.com/steam/apps/976310/header.jpg"
+            alt="Mortal Kombat 11">
+          <div class="game-card__body">
+            <h3 class="game-card__title">Mortal Kombat 11</h3>
+            <p class="game-card__meta">Файтинг / Экшн</p>
+            <div class="game-card__foot">
+              <span class="price">1190₽</span>
+              <button class="btn btn--primary add-to-cart">Купить</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Skyrim Special Edition -->
+        <article class="game-card">
+          <img class="game-card__img" src="https://cdn.cloudflare.steamstatic.com/steam/apps/489830/header.jpg"
+            alt="Skyrim Special Edition">
+          <div class="game-card__body">
+            <h3 class="game-card__title">The Elder Scrolls V: Skyrim Special Edition</h3>
+            <p class="game-card__meta">RPG</p>
+            <div class="game-card__foot">
+              <span class="price">1610₽</span>
+              <button class="btn btn--primary add-to-cart">Купить</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Rust -->
+        <article class="game-card">
+          <img class="game-card__img" src="https://cdn.cloudflare.steamstatic.com/steam/apps/252490/header.jpg"
+            alt="Rust">
+          <div class="game-card__body">
+            <h3 class="game-card__title">Rust</h3>
+            <p class="game-card__meta">Survival / Многопользовательская</p>
+            <div class="game-card__foot">
+              <span class="price">890₽</span>
+              <button class="btn btn--primary add-to-cart">Купить</button>
+            </div>
+          </div>
+        </article>
+
+        <div id="cart" class="cart">
+          <h3>Корзина</h3>
+          <ul id="cart-items"></ul>
+          <div class="cart-total">
+            Итого: <span id="cart-total">0</span>₽
+          </div>
+          <button id="checkout-btn" class="btn btn--primary">Оформить</button>
+        </div>
+    </section>
+
+
+    </div>
+    </section>
+
+    <section class="profile-preview container" id="profilePreview" aria-hidden="true">
+      <div class="profile-card">
+        <div class="profile-card__avatar">U</div>
+        <div>
+          <div class="profile-card__name">Гость</div>
+          <div class="profile-card__email">guest@example.com</div>
+          <div class="profile-card__actions">
+            <button class="btn" onclick="openModal('login')">Войти</button>
+            <button class="btn" onclick="openModal('register')">Регистрация</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODALS -->
+  <div class="modal-bg" id="login-modal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+      <h3 id="loginTitle">Вход</h3>
+      <input type="email" id="loginEmail" placeholder="Email">
+      <input type="password" id="loginPass" placeholder="Пароль">
+      <button class="btn btn--primary" onclick="doLogin()">Войти</button>
+    </div>
+  </div>
+
+  <div class="modal-bg" id="register-modal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="regTitle">
+      <h3 id="regTitle">Регистрация</h3>
+      <input type="email" id="regEmail" placeholder="Email">
+      <input type="password" id="regPass" placeholder="Пароль">
+      <button class="btn btn--primary" onclick="doRegister()">Создать аккаунт</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>© 2025 BestGames</div>
+      <nav>
+        <a href="#">Помощь</a> · <a href="#">Правила</a> · <a href="#">Контакты</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
